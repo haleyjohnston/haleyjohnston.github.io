@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haley Johnston Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+              integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <div class="logo">
+                <a href="../index.html" id="dev-haley">&lt;devhaley&gt;</a>
+            </div>
+            <a href="../index.html">HOME</a>
+            <a href="../pages/about.html" class="active">ABOUT</a>
+            <a href="../pages/projects.html">PROJECTS</a>
+            <a href="../pages/contact.html">CONTACT</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+        <!-- Body -->
+    <main>
+        <section class="about responsive-center">
+            <figure>
+                <img class="about__portrait" src="../img/haley-portrait.jpg" alt="portrait of Haley Johnston">
+            </figure>            
+            <div class="about__info">
+                <h1 class="about__title">About Haley</h1>
+                <p>I am a front-end web developer with a passion to create beautiful and successful websites that are fast and easy to use.  I strive to expand my abilities in both development and design by continuously learning related technologies and putting my skills to the test.</p>
+                <p>My design process focuses on contemporary ideas that is ever evolving on the web. This process ensures that the work I 
+                    produce is up-to-date with current trends. My enthusiasm for web development and multimedia drives me to produce stunning work for both business and consumer use. </p>
+                <button id="btn-resume" onclick="window.open('../assets/johnston-haley-resume_02_2021.pdf','_blank')">Resume</button>
+            </div>
+        </section>
+        <!-- skills -->
+        <section class="my-skills"> 
+            <h1>My Skills</h1>
+            <div class="my-skills__column">
+                <p>HTML5</p>
+                <div class="my-skills__container">
+                    <div class="skills html">90%</div>
+                </div>
+                <p>CSS3</p>
+                <div class="my-skills__container">
+                  <div class="skills css">80%</div>
+                </div>
+                <p>JavaScript</p>
+                <div class="my-skills__container">
+                  <div class="skills js">65%</div>
+                </div>
+                <p>Bootstrap 4</p>
+                <div class="my-skills__container">
+                  <div class="skills bs">75%</div>
+                </div>
+            </div>
+            <div class="my-skills__column">
+                <p>Photoshop</p>
+                <div class="my-skills__container">
+                  <div class="skills ps">95%</div>
+                </div>
+                <p>Adobe XD</p>
+                <div class="my-skills__container">
+                  <div class="skills xd">85%</div>
+                </div>
+                <p>Responsive &amp; Mobile Design</p>
+                <div class="my-skills__container">
+                  <div class="skills rm">90%</div>
+                </div>
+                <p>WordPress</p>
+                <div class="my-skills__container">
+                  <div class="skills wp">90%</div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </section>
+    </main>
+    <footer>
+        <h3>Let's Collaborate</h3>
+        <h4>What project should we work on together?</h4>
+        <button id="btn-contact" onclick="goToContact()">Get in Touch</button>
+        <div class="social">          
+            <a href="https://www.instagram.com/haleyjodraws/" class="fab fa-instagram"></a>
+            <a href="https://www.youtube.com/channel/UCkX772m-R8Imet6sW3rl0kQ" class="fab fa-youtube"></a>
+            <a href="https://www.linkedin.com/in/haley-johnston-27aa50157" class="fab fa-linkedin"></a>
+        </div>
+    </footer>      
+</body>
+</html>

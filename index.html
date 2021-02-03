@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haley Johnston Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+              integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script> 
+</head>
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <div class="logo">
+                <a href="index.html" id="dev-haley">&lt;devhaley&gt;</a>
+            </div>
+            <a href="index.html" class="active">HOME</a>
+            <a href="pages/about.html">ABOUT</a>
+            <a href="pages/projects.html">PROJECTS</a>
+            <a href="pages/contact.html">CONTACT</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <section class="intro">
+            <div class="intro__heading">
+                <h1 class="intro__greeting">Hello, I'm</h1>
+                <h2 class="intro__name">HALEY JOHNSTON</h2>  
+                <h3 class="intro__job-title">Web Developer &amp; Designer</h3>
+                <h4 class="intro__location">Based in York, Pennsylvania</h4>
+            </div>
+            <div>
+                <img class="avatar" src="img/haley-lg.png">
+            </div>
+        </section>
+    </header>     
+    <main class="home-body center">
+        <h2>My Services</h2>
+        <h4 class="tagline">I design and build websites, focusing on <strong>ease of use, clean design,</strong> and <strong>thoughtful interaction.</strong></h4>
+        <section class="services">    
+            <div class="service__info" onclick="location.href='pages/projects.html#websites'">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Front-End Development</h3>
+                <p>HTML5, CSS3, JavaScript, Bootstrap 4, CMS</p>
+            </div>
+            <div class="service__info" onclick="location.href='pages/projects.html#web-designs'">
+                <i class="far fa-object-group"></i>
+                <h3>Web Design</h3>
+                <p>Web, mobile, UX, UI, Wireframing, mockups, prototyping</p>
+            </div>
+            <div class="service__info" onclick="location.href='pages/projects.html#graphics'">
+                <i class="fas fa-palette"></i>
+                <h3>Graphic Design</h3>
+                <p>Logos, posters, photo editing, brand identity</p>
+            </div>    
+        </section>
+    </main>
+    <footer>
+        <h3>Let's Collaborate</h3>
+        <h4>What project should we work on together?</h4>
+        <button id="btn-contact" onclick="contactFromHome()">Get in Touch</button>
+        <div class="social">          
+            <a href="https://www.instagram.com/haleyjodraws/" class="fab fa-instagram"></a>
+            <a href="https://www.youtube.com/channel/UCkX772m-R8Imet6sW3rl0kQ" class="fab fa-youtube"></a>
+            <a href="https://www.linkedin.com/in/haley-johnston-27aa50157" class="fab fa-linkedin"></a>
+        </div>
+    </footer>
+</body>
+</html>
