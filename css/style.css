@@ -234,23 +234,6 @@ a {font-size: var(--fs-body);}
     max-width: 100%;
     height: auto;
 }
-#btn-resume {
-    border-radius: 5px;
-	cursor: pointer;
-	width: 80px;
-	border: none;
-	background: var(--clr-accent);
-	color: var(--clr-white);
-	margin: 0 0 5px;
-	padding: 10px;
-	font-size: 15px;
-}
-#btn-resume:hover {
-    background: var(--clr-dark);
-	-webkit-transition: background 0.3s ease-in-out;
-	-moz-transition: background 0.3s ease-in-out;
-	transition: background-color 0.3s ease-in-out;
-}
 .my-skills {
     background-color: #424242;
     color: var(--clr-light);
@@ -522,10 +505,6 @@ a.fab {
         width: 100%;
         margin: 1rem 0;
         text-align: center;
-    }
-    #btn-resume {
-        margin: auto;
-        align-items: center;
     }
     .my-skills__column {
         padding: 0;
