@@ -234,44 +234,177 @@ a {font-size: var(--fs-body);}
     max-width: 100%;
     height: auto;
 }
+/* Skills Section */
 .my-skills {
-    background-color: #424242;
-    color: var(--clr-light);
-    text-align: center;
-    padding: 3rem;
+    background-color: #3D3D3D;
+    padding: 50px;
 }
-.my-skills__column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    text-align: left;
-}
-.my-skills__column > p {margin-bottom: -0.1rem;}
-.my-skills__container {
-    padding: 3px;
-    border-radius: 25px;
-    width: 100%; 
-    background-color: var(--clr-light);
-}
-.skills {
-    font-weight: var(--fw-bold);
-    border-radius: 25px;
-    text-align: right;
-    padding-top: .2rem;
-    padding-bottom: .2rem;
-}
-.html, .css, .js, .bs, .ps, .xd, .rm, .wp {
-    padding-right: 1rem;
-    background-color: var(--clr-accent);
-}
-.html {width: 90%;}
-.css {width: 80%;}
-.js {width: 65%;}
-.bs {width: 75%;}
-.ps {width: 95%;}
-.xd {width: 85%;}
-.rm {width: 90%;}
-.wp {width: 90%;}
+.skills-bar-container {
+    position: relative;
+    width: 40%;
+    min-width: 300px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    list-style: none;
+  }
+  .skills-bar-container li {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .skills-bar-container li .progressbar-title {
+    color: #fff;
+  }
+  .skills-bar-container li .progressbar-title h3 {
+    display: inline-block;
+  }
+  .skills-bar-container li .progressbar-title .percent {
+    position: absolute;
+    right: 5px;
+  }
+  .skills-bar-container li .bar-container {
+    background: #555;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    margin-top: 5px;
+    display: block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+  }
+  .skills-bar-container li .bar-container .progressbar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .skills-bar-container li .bar-container #progress-htmlcss {
+    -webkit-animation-name: progress-htmlcss;
+    animation-name: progress-htmlcss;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+  }
+  .skills-bar-container li .bar-container #progress-javascript {
+    -webkit-animation-name: progress-javascript;
+    animation-name: progress-javascript;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+  }
+  .skills-bar-container li .bar-container #progress-design {
+    -webkit-animation-name: progress-design;
+    animation-name: progress-design;
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+  }
+  .skills-bar-container li .bar-container #progress-bootstrap {
+    -webkit-animation-name: progress-bootstrap;
+    animation-name: progress-bootstrap;
+    -webkit-animation-delay: 2.8s;
+    animation-delay: 2.8s;
+  }
+  .skills-bar-container li .bar-container #progress-adobe {
+    -webkit-animation-name: progress-adobe;
+    animation-name: progress-adobe;
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+  }
+  
+  .progressred {
+    background-color: #c0392b;
+  }
+  
+  .progressblue {
+    background-color: #1199ff;
+  }
+  
+  .progresspurple {
+    background-color: #9b59b6;
+  }
+  
+  .progressorange {
+    background-color: #ffa500;
+  }
+  
+  .progressgreen {
+    background-color: #27ae60;
+  }
+  
+  @-webkit-keyframes progress-htmlcss {
+    0% {width: 0%;}
+    100% {width: 90%;}
+  }
+  @-webkit-keyframes progress-javascript {
+    0% {width: 0%;}
+    100% {width: 65%;}
+  }
+  @-webkit-keyframes progress-design {
+    0% {width: 0%;}
+    100% {width: 85%;}
+  }
+  @-webkit-keyframes progress-bootstrap {
+    0% {width: 0%;}
+    100% {width: 80%;}
+  }
+  @-webkit-keyframes progress-adobe {
+    0% {width: 0%;}
+    100% {width: 90%;}
+  }
+
+  @-moz-keyframes progress-htmlcss {
+    0% {width: 0%;}
+    100% {width: 90%;}
+  }
+  @-moz-keyframes progress-javascript {
+    0% {width: 0%;}
+    100% {width: 65%;}
+  }
+  @-moz-keyframes progress-design {
+    0% {width: 0%;}
+    100% {width: 85%;}
+  }
+  @-moz-keyframes progress-bootstrap {
+    0% {width: 0%;}
+    100% {width: 80%;}
+  }
+  @-moz-keyframes progress-adobe {
+    0% {width: 0%;}
+    100% {width: 90%;}
+  }
+
+  @keyframes progress-htmlcss {
+    0% {width: 0%;}
+    100% {width: 90%;}
+  }
+  @keyframes progress-javascript {
+    0% {width: 0%;}
+    100% {width: 65%;}
+  }
+  @keyframes progress-design {
+    0% {width: 0%;}
+    100% {width: 85%;}
+  }
+  @keyframes progress-bootstrap {
+    0% {width: 0%;}
+    100% {width: 80%;}
+  }
+  @keyframes progress-adobe {
+    0% {width: 0%;}
+    100% {width: 90%;}
+  }
 
 /* --- Projects --- */
 .projects {
